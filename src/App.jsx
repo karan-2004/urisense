@@ -1,5 +1,23 @@
-export default function App() {
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home"
+import Layout from './pages/Layout';
+import Register from './pages/Register';
+import Login from './pages/Login'
+function App() {
+
   return (
-    <h2 className="text-center text-2xl font-semibold">This is vite react tailwind template</h2>
-  );
+   <BrowserRouter>
+   <Routes>
+    <Route path='/' element={<Layout/>}>
+    <Route index element={<Home/>}/>
+    <Route path="login" element={<Login/>}/>
+    <Route path="register" element={<Register/>}/>
+
+    </Route>
+   </Routes>
+   
+   </BrowserRouter> 
+  )
 }
+
+export default App
