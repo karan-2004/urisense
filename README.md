@@ -1,73 +1,21 @@
-# Tailwind CSS + Vite + React Template
-
-This is a starter template for building React applications with Tailwind CSS and Vite. It's designed to help you kickstart your projects with a modern development environment and a clean, scalable structure.
-
-## Features
-
-- **Vite**: Enjoy the speed of Vite, a fast build tool that significantly improves the development experience.
-- **React**: Build your user interfaces with the popular React library.
-- **Tailwind CSS**: Utilize the power of Tailwind CSS for rapid and efficient styling.
-- **Easy to Customize**: Customize the template to fit your project needs with minimal effort.
-- **Optimized for Production**: Get optimized, minified, and production-ready builds for your application.
-
-## Getting Started
-
-1. **Clone the Repository**:
-
-   ```bash
-   git clone https://github.com/Im-Rudra/vite-react-tailwind.git
-   ```
-
-2. **Navigate to the Project Directory**:
-
-   ```bash
-   cd vite-react-tailwind
-   ```
-
-3. **Install Dependencies**:
-
-   ```bash
-   pnpm install
-   ```
-
-4. **Start the Development Server**:
-
-   ```bash
-   pnpm dev
-   ```
-
-   This will start the development server. Open your browser and visit `http://localhost:5173` to see your app in action.
-
-## Folder Structure
-
-- `src/`: Contains the source code for your React application.
-  - `components/`: Place your React components here.
-  - `styles/`: Store your stylesheets, including Tailwind CSS.
-  - `App.jsx`: Main entry point for your React application.
-- `public/`: Public assets like HTML files or images.
-- `tailwind.config.js`: Configuration file for Tailwind CSS.
-
-## Customization
-
-Feel free to customize this template to meet your project requirements. Update the `src/` directory with your components and styles. Modify the `tailwind.config.js` file to adjust Tailwind CSS settings.
-
-## Building for Production
-
-To build your application for production, run:
-
-```bash
-pnpm build
-```
-
-This command will generate optimized and minified files in the `dist/` directory.
-
-## Contributing
-
-If you'd like to contribute or have suggestions, please feel free to open an issue or submit a pull request. We welcome your feedback and contributions!
-
-## License
-
-This template is open-source and available under the [MIT License](LICENSE).
-
-Happy coding! 🚀
 # urisense
+
+   > The application is live on: https://urisense.vercel.app/ 
+
+   - Urisense is a urine strip color extraction tool for the urinalysis
+   - It is the client side of the application which utilizes the tools such as react js and tailwind css
+   - It consists of three pages register, login and home
+   - In home page loggedin user's last test result can be obtained and new strip image can be uploaded for the test
+ 
+ ## homepage without authentication
+![Screenshot from 2024-07-01 19-38-43](https://github.com/karan-2004/urisense/assets/94951738/b6404811-75df-4827-8b02-aaf013b0a5d2)
+## login page
+![Screenshot from 2024-07-01 19-38-49](https://github.com/karan-2004/urisense/assets/94951738/873ea313-24c0-47ab-a6cc-71df1cc0ea87)
+## register page
+![Screenshot from 2024-07-01 19-38-59](https://github.com/karan-2004/urisense/assets/94951738/75422e97-6cd9-4281-8875-46c3a659864c)
+## loading screen during obtaining last test results
+![Screenshot from 2024-07-01 20-30-27](https://github.com/karan-2004/urisense/assets/94951738/5d6c86ca-1894-41ef-9b6d-3a9f414166e4)
+## authenticated user's home page before uploading image
+![Screenshot from 2024-07-01 20-30-35](https://github.com/karan-2004/urisense/assets/94951738/5fa6b344-dab0-4257-a206-695d21ae19fa)
+## authenticated user's home page after uploading image
+![Screenshot from 2024-07-01 20-34-28](https://github.com/karan-2004/urisense/assets/94951738/0a2b2183-dc3d-410f-b551-23d782ae6467)
