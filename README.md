@@ -2,7 +2,7 @@
 
    > The application is live on: https://urisense.vercel.app/ 
 
-   - Urisense is a urine strip color extraction tool for the urinanalysis
+   - Urisense is a urine strip color extraction tool for the urinalysis
    - It is the client side of the application which utilizes the tools such as react js and tailwind css
    - It consists of three pages register, login and home
    - In home page loggedin user's last test result can be obtained and new strip image can be uploaded for the test
