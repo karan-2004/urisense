@@ -42,7 +42,7 @@ export default function Register() {
                 Object.keys(error.response.data).forEach(field => {
                     const errorMessages = error.response.data[field];
                     if(errorMessages && errorMessages.length > 0){
-                        setError(errorMessages[0]);
+                        setError(errorMessages);
                     }
                 })
             }
@@ -53,9 +53,10 @@ export default function Register() {
 
 	};
 	return (
+		<>
+		{error && <p style={{color:"red"}}>{error}</p>}
+		{ successMessage && <p style={{color:"green"}}>{successMessage}</p>}
 		<div className="flex w-vw h-[70vh] justify-center items-center">
-            {error && <p style={{color:"red"}}>{error}</p>}
-            { successMessage && <p style={{color:"green"}}>{successMessage}</p>}
 			<form className="form">
 				<label>username:</label>
 				<br />
@@ -102,5 +103,6 @@ export default function Register() {
 				</button>
 			</form>
 		</div>
+		</>
 	);
 }

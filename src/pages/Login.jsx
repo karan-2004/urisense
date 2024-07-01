@@ -55,7 +55,7 @@ export default function Login() {
                   Object.keys(error.response.data).forEach(field => {
                       const errorMessages = error.response.data[field];
                       if(errorMessages && errorMessages.length > 0){
-                          setError(errorMessages[0]);
+                          setError(errorMessages);
                       }
                   })
               }
@@ -67,9 +67,10 @@ export default function Login() {
     };
 
       return (
-        <div className="flex w-vw h-[70vh] justify-center items-center">
+        <>
         {error && <p style={{color:"red"}}>{error}</p>}
-                { successMessage && <p style={{color:"green"}}>{successMessage}</p>}
+        { successMessage && <p style={{color:"green"}}>{successMessage}</p>}
+        <div className="flex w-vw h-[70vh] justify-center items-center">
           <form className="form">
       
             <label>username:</label>
@@ -98,5 +99,6 @@ export default function Login() {
             </button>
           </form>
         </div>
+        </>
       )
 }
