@@ -28,7 +28,7 @@ input {
 
 
 .form {
-    @apply bg-black  p-5 rounded-md w-[50%] text-white md:w-[40%] shadow-2xl bg-opacity-[20%] md:bg-slate-200 md:bg-opacity-100 md:text-black;
+    @apply bg-black  p-5 rounded-md w-[100%] text-white md:w-[40%] shadow-2xl bg-opacity-[20%] md:bg-slate-200 md:bg-opacity-100 md:text-black;
 }
 
 

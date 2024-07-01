@@ -52,13 +52,13 @@ const ImageResults = ({ refreshData }) => {
   }
 
   return (
-    <div className='h-[50%] flex p-5'>
-      <div className='mr-5'>
+    <div className='flex flex-col p-5 md:h-[50%] md:flex-row'>
+      <div className='mr-5 mb-3 md:mb-0'>
         <p>Your last test results</p>
         <p>test id: {data.id}</p>
         <p>tested on: {data.created_at}</p>
       </div>
-      <img src={data.image} alt={`Test ID ${data.id}`} style={{ maxWidth: '5%' }} className='h-[100%] mr-5' />
+      <img src={data.image} alt={`Test ID ${data.id}`} className='h-[100%] mr-5 max-w-[15%] md:max-w-[5%] mb-3 md:mb-0' />
       <div>
         <p>COLORS OF THE CHEMICALS</p>
         {data.results.map(result => (
