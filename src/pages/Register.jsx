@@ -53,11 +53,10 @@ export default function Register() {
 
 	};
 	return (
-		<div>
+		<div className="flex w-vw h-[70vh] justify-center items-center">
             {error && <p style={{color:"red"}}>{error}</p>}
             { successMessage && <p style={{color:"green"}}>{successMessage}</p>}
-			<h2>Register:</h2>
-			<form>
+			<form className="form">
 				<label>username:</label>
 				<br />
 				<input
@@ -98,7 +97,7 @@ export default function Register() {
 				></input>{" "}
 				<br />
 				<br />
-				<button type="submit" disabled={isLoading} onClick={handleSubmit}>
+				<button type="submit" disabled={isLoading} onClick={handleSubmit} className="btn p-2">
 					Register
 				</button>
 			</form>

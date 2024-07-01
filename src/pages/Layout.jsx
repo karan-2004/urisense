@@ -6,8 +6,8 @@ export default function Layout() {
       
 	return (
 		<>
-			<nav className="flex p-2 bg-slate-300">
-                <Link to="/">URISENSE</Link>
+			<nav className="flex p-3 shadow-lg">
+                <Link to="/" className="text-3xl font-extrabold text-stone-600">URISENSE</Link>
             </nav>
             <Outlet/>
 		</>

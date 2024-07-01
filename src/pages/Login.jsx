@@ -67,10 +67,9 @@ export default function Login() {
     };
 
       return (
-        <div>
+        <div className="flex w-vw h-[70vh] justify-center items-center">
         {error && <p style={{color:"red"}}>{error}</p>}
                 { successMessage && <p style={{color:"green"}}>{successMessage}</p>}
-          <h2>Login:</h2>
           <form className="form">
       
             <label>username:</label>
@@ -94,7 +93,7 @@ export default function Login() {
             
             <br />
             <br/>
-            <button type="submit" disabled={isLoading} onClick={handleSubmit}>
+            <button type="submit" disabled={isLoading} onClick={handleSubmit} className="btn p-2">
               Login
             </button>
           </form>
