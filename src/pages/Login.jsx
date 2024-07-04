@@ -68,11 +68,11 @@ export default function Login() {
 
       return (
         <>
-        {error && <p style={{color:"red"}}>{error}</p>}
-        { successMessage && <p style={{color:"green"}}>{successMessage}</p>}
+
         <div className="flex w-vw h-[70vh] justify-center items-center">
           <form className="form">
-      
+            {error && <p style={{color:"red"}}>{error}</p>}
+            { successMessage && <p style={{color:"green"}}>{successMessage}</p>}
             <label>username:</label>
             <br />
             <input
