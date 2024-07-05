@@ -29,6 +29,8 @@ const ImageResults = ({ refreshData }) => {
             const testDetails = await axios.get(`https://karanraj1324.pythonanywhere.com/tests/${latestTest.id}/`, config);
             console.log(testDetails.data);
             setData(testDetails.data);
+            setIsEmpty(false);
+            console.log('hi')
           } else {
             setIsEmpty(true); // Set isEmpty state if no tests are found
           }
